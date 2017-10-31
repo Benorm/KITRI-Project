@@ -1,7 +1,7 @@
 def main():
 
     print("~~~~~~~~~~~~~~~~~~~~~~~ World")
-    print("테스트 중입니다")
+    print("하이요")
 
 if __name__ == "__main__":
     main()
