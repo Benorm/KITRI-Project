@@ -106,7 +106,7 @@ class SimpleChain:
         self.chain = []
 
     def add_block(self, block):
-        """ Add a block if valid."""
+        """ Add a block if valid"""
         if len(self.chain) > 0:
             block.prev_hash = self.chain[-1].hash
         block.seal()
