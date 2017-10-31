@@ -1,6 +1,6 @@
 # KITRI-Projectdef main():
 
-    print("Hello World")
+    print("Bye world")
 
 if __name__ == "__main__":
     main()
