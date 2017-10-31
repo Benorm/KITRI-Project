@@ -161,7 +161,7 @@ def manager():
 
     print(msg)
     while True:
-        print()
+        print("Hello World!!")
 
         decide = input("Your action: ")
 
