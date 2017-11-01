@@ -41,10 +41,14 @@ class Message:
         if self.hash != self._hash_message():
             raise InvalidMessage("Invalid message hash in message: " + str(self))
 
+
     def __repr__(self):
-        return 'Message<hash: {}, prev_hash: {}, data: {}>'.format(
-            self.hash, self.prev_hash, self.data[:20]
-        )
+        return 'data: {}>'.format(self.data[:20])
+
+    # def __repr__(self):
+    #     return 'Message<hash: {}, prev_hash: {}, data: {}>'.format(
+    #         self.hash, self.prev_hash, self.data[:20]
+    #     )
 
 
 class Block:
@@ -96,8 +100,8 @@ class Block:
                 )
 
     def __repr__(self):
-        return 'Block<hash: {}, prev_hash: {}, messages: {}, time: {}>'.format(
-            self.hash, self.prev_hash, len(self.messages), self.timestamp
+        return 'Block<hash: {}, prev_hash: {}, messages: {} {}, time: {}>'.format(
+            self.hash, self.prev_hash, len(self.messages), self.messages, self.timestamp
         )
 
 
@@ -161,7 +165,6 @@ def manager():
 
     print(msg)
     while True:
-        print("Hello World!!")
 
         decide = input("Your action: ")
 
